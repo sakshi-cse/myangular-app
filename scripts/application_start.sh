@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #give permission for everything in the express-app directory
-sudo chmod -R 777 /home/ubuntu/myangular-app/
+sudo chmod -R 777 /var/www/html/
 
 #navigate into our working directory where we have all our github files
-cd /home/ubuntu/myangular-app/
+cd /var/www/html/
 
 #add npm and node to path
 #export NVM_DIR="$HOME/.nvm"    
@@ -17,7 +17,7 @@ cd /home/ubuntu/myangular-app/
 # npm install -g pm2
 
 #build command
-sudo ng build
+#sudo ng build
 
 #start our node app in the background
 pm2 serve dist 4200
